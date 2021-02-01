@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="../static/styles.css">
+</head>
+<body><header>
+	<nav>
+		<div class="logo"><h3>Spam Filteration</h3></div>
+		<div class="menu"><a href=""><h3>About Us</h3></a></div>
+	</nav>
+	<main>
+		<h1>WELCOME TO SPAM FILTERATION PROJECT</h1>
+		<br/>
+	</main>
+	<form class="form" action="{{ url_for('predict')}}" method="POST">
+		<p><h2>Enter Your Message/Mail Here which you want to predict</h2></p>
+		<br/>
+		<textarea name="message" rows="4" cols="80"></textarea>
+		<br/>
+
+	<input type="Submit" class="btn-info" value="Predict">
+	</header>
+</body>
+</html>
